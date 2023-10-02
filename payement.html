@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="css/file.css">
+    <script src="payement.js" defer></script>
+    <script src="mesProduits.js"></script>
+
+    <title>MakeUp</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <!--nav class="navbar">
+            <ul class="topnav">
+                <div id="mySidebar" class="sidebar active logo">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    <a href="#">A Propos</a>
+                    <a href="#">Nos Produits</a>
+                    <a href="#">Panier</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <li><a class="active logo openbtn" onclick="openNav()">---</a></li>
+                <!--nomB->
+                <li><a href="" class="active logo ">BEAUTIFLY</a></li>
+                <div class="rech">
+
+                    <button type="button"><i class="fa fa-user"></i></button>
+                    <button type="button" onclick="monPanier()"><i class="fa fa-shopping-bag" ><span id="count" class="count">0</span></i> </button>
+                    <button type="button"><i class="fa fa-search"></i> </button>
+                </div>
+            </ul>
+        </nav-->
+    
+        <div class="topnav">
+            <div class="topnav-centered">
+              <a class="active">BEAUTIFLIE</a>
+            </div>
+            <div id="mySidebar" class="sidebar active logo">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+              <a href="#">A Propos</a>
+              <a href="#">Nos Produits</a>
+              <a href="#">Panier</a>
+              <a href="#">Contact</a>
+            </div>
+            <a  ><i class="fa fa-bars"></i></a>
+            <div class="topnav-right">
+              <a href=""><i class="fa fa-user"></i></a>
+              <a  onclick="monPanier()" class="shop"><i class="fa fa-shopping-bag"><span id="count"
+                class="count">0</span></i></a>
+              <a href=""><i class="fa fa-search"></i></a>
+            </div>    
+        </div>
+    </div>
+
+    <!--div class="section">
+        <div class=" content">
+            <div class="mask"></div>
+            <div id="first">
+                <h1 class="col-6 paraph ">
+                    Beauty Kit
+                </h1>
+                <div class="row col-12 paraphT">
+                    <div class="col-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eaque doloribus iure dolores,
+                            cumque est ea
+                            ullam voluptatibus optio hic.</p>
+                    </div>
+                </div>
+                <div id="buttonM" class="row col-6 buttonM">
+                    <button type="button" id="BtnJ">BUY NOW</button>
+                </div>
+            </div>
+            <div class="imgm">
+                <img src="./ml.jpg" alt="img" />
+            </div>
+        </div>
+    </div-->
+    <div class="col-12 promenu">
+        <div class="row">
+            <div class="col-12 menuo productf">
+                <h1>Mon Panier</h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="row menupropan">
+        <div class="row  menu">
+            
+
+        </div>
+    </div>
+
+    <!--div class="row  buttonmore">
+        <button> SEE MORE</button>
+    </div-->
+    <!--div class="row  about">
+        <div class="row ">
+            <div class="col-6 sectiontext">
+                <h1> ABOUT OUR BEAUTY STORE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum unde, aliquid molestias
+                    excepturi,
+                    facere accusamus reprehenderit assumenda praesentium eaque eligendi tenetur optio id fugit illum
+                    mollitia
+                    quasi natus nostrum quae iure dolorem et. Facere dignissimos, architecto aperiam veniam sed natus
+                    porro,
+                    inventore saepe repellendus possimus nisi exercitationem cupiditate minus, cum minima asperiores
+                    quisquam
+                    delectus aliquid magnam perferendis doloremque similique.
+
+                </p>
+                <div id="button" class="row  buttonreadmore">
+                    <button type="button" id="Btn">READ MORE</button>
+                </div>
+
+            </div>
+            <div class="col-3 sectionimg">
+                <img src="" alt="" ->
+            </div>
+
+
+        </div>
+
+    </div-->
+    <!--div class=" ">
+        <div class=" customers ">
+            <h1>WHAT SAYS CUSTOMERS</h1>
+        </div>
+    </div-->
+
+    <!--div class="testimony">
+        <img src="custa.jpg" alt="Avatar" style="width:90px">
+        <p><span>JONYRO</span></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ipsam?</p>
+    </div>
+    <div class="prevnext">
+        <a href="" class="prev round">&#8249;</a>
+        <a href="" class="next round">&#8250;</a>
+    </div-->
+
+    <div class="row gettouch">
+        <div class="row ">
+            <div class="col-6 sectiontext ">
+                <h1> TOTAL PAYEMENT</h1>
+                <p id="totalpaye">
+                </p>
+            </div>
+            <div class="row  sectionimg">
+                <div id="button" class="buttonreadmore">
+                    <button type="button" id="Btn" class="newslett" onclick="Totalpayement()">BUY NOW</button>
+                    <!--button type="button" id="Btn" class="newslett">DELETE</button-->
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="row footer">
+        <div class="mask"></div>
+        <div class="row col-12 container">
+            <div id="boxes">
+                <div class="leftbox">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>Adress : Lomé TOGO</li>
+                        <li><i class="fa fa-phone"> </i>Call : +228 00 00 00 00</li>
+                        <li><i class="fa fa-envelope"> </i>Email : beauty@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="middlebox">
+                    <h2>BEAUTIFLIE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt inventore repudiandae eius
+                        velit vero quaerat sed ipsam. Libero, cumque labore dignissimos dolores error placeat dolore.
+                    </p>
+                    <div class="iconet">
+                        <ul>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-twitter"> </i></li>
+                            <li><i class="fa fa-linkedin"> </i></li>
+                            <li><i class="fa fa-whatsapp"> </i></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="rightbox">
+                    <h4>BEST PRODUCT</h4>
+                    <ul>
+                        <li><a href="">Lorem ipsum dolor </a></li>
+                        <li><a href="">Lorem ipsum dolor </a></li>
+                        <li><a href="">Lorem ipsum dolor </a></li>
+                        <li><a href="">Lorem ipsum dolor </a></li>
+                        <li><a href="">Lorem ipsum dolor </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+       
+    </script>
+
+</body>
+
+</html>

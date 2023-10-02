@@ -1,0 +1,1807 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #fddff2;
+  color: rgb(0, 0, 0);
+  padding: 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fddff2;
+  margin-bottom: 0px;
+  width: auto;
+}
+.header .topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #fddff2;
+  color: black;
+}
+.header .topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.header .topnav a:hover {
+  background-color: #fddff2;
+  color: black;
+}
+.header .topnav a.active {
+  background-color: #fddff2;
+  color: black;
+}
+.header .topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .topnav-right {
+  float: right;
+}
+.header .topnav-right .shop {
+  cursor: pointer;
+}
+.header .topnav-right .shop .count {
+  width: auto;
+  top: -5px;
+  border: 1px solid red;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* .navbar {
+   margin-left: 10px;
+   margin-right: 10px;
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     //background-color: #ffffff;
+     .leftnav{
+       width: 33.33%;
+       height: auto;
+       border: 1px solid red;
+     }
+     .middlenav{
+       width: 35%;
+       height: auto;
+       border: 1px solid blue;
+       float: left;
+       margin-left: 25%;
+       text-align: center;
+     }
+     .rech{
+       float: right;
+       width: auto;
+       margin-right: 10px;
+       border: 1px solid black;
+       button{
+         float: right;
+         padding: 6px ;
+         margin-top: 8px;
+         margin-right: 5px;
+         background-color: #fddff2;
+         color: rgba(0, 0, 0, 1);
+         font-size: 15px;
+         border: none;
+         cursor: pointer;
+         &:hover{
+           background-color: gray;
+         }
+         .count{
+           width: auto;
+           top: -5px;
+           border: 1px solid red;
+           border-radius: 50%;
+           background-color: red;
+           color:white;
+         }
+       }
+     }
+   }
+
+   li {
+     float: left;
+   }
+
+   li a {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+
+   li a:hover:not(.active) {
+    // background-color: red;
+     border-radius: 8px;
+     color: white;
+     text-decoration: none;
+
+   }
+
+
+
+   .nomB {
+     float: left;
+     //border: 1px solid yellow;
+     //width: 30%;
+     //height: 20px;
+     margin-left: 50%;
+     margin-right: 50%;
+    /* top: 5%;
+     left: 50%;
+     transform: translate(-50%, -50%);/
+     text-align: center;
+    //
+   }
+
+   .active {
+     background-color: #fddff2;
+   }
+
+   .logo {
+     font-weight: bold;
+     //margin-right: 50px;
+   }
+
+   .sidebar {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 3;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+
+     a {
+       padding: 8px 8px 8px 32px;
+       text-decoration: none;
+       font-size: 25px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+
+       &:hover {
+         color: #f1f1f1;
+       }
+     }
+     .closebtn {
+       position: absolute;
+       top: 0;
+       right: 25px;
+       font-size: 36px;
+       margin-left: 50px;
+     }
+   }
+
+
+
+ }*/
+.section {
+  width: auto;
+  height: 500px;
+  margin-bottom: 0px;
+}
+.section .content {
+  width: auto;
+  height: 450px;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #000;
+  position: relative;
+}
+.section .content .imgm {
+  float: right;
+  width: 100%;
+  border-radius: 5px;
+}
+.section .content .imgm img {
+  float: right;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+.section .content .mask {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(121, 122, 124, 0.5);
+}
+
+.paraph {
+  color: rgb(0, 0, 0);
+  font-family: "Ingrid Darling", "Snell Roundhand, cursive";
+  font-weight: bold;
+  font-size: 3em;
+  margin-top: 10px;
+  margin-left: 10%;
+  width: auto;
+  height: 100px;
+  z-index: 2;
+  position: relative;
+}
+
+.paraphT {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+.paraphT p {
+  font-size: 20px;
+}
+
+.buttonM {
+  border: none;
+  z-index: 2;
+  position: relative;
+  width: auto;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-bottom: 0px;
+}
+.buttonM button {
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn :hover {
+  color: black;
+}
+
+.menu {
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 15px;
+}
+.menu .menup {
+  width: 24%;
+  margin: 6px;
+  border: 1px solid gray;
+  padding: 0px;
+}
+.menu .menup .menupimg img {
+  object-fit: fill;
+  margin: 0 auto;
+}
+.menu .menup .menupa {
+  padding: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  opacity: 1;
+}
+.menu .menup .menupa h4 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.menu .menup .menupa p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.menu .menup .blackbox {
+  cursor: pointer;
+  margin: 0px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  grid-column-gap: 2px;
+}
+.menu .menup .blackbox .detail {
+  width: 25%;
+  height: auto;
+  margin-right: 5px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(238, 192, 131);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+.menu .menup .blackbox .detailp {
+  width: 30%;
+  height: auto;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(238, 192, 131);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+.menu .menup .blackbox .addp {
+  width: 30%;
+  height: auto;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(238, 192, 131);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+.menu .menup .blackbox .detailm {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin-right: 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(238, 192, 131);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+.menu .menup .blackbox .add {
+  width: 30%;
+  padding: 2px;
+  margin-right: 2px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  text-align: center;
+}
+.menu .menup .blackbox .add .button {
+  border: none;
+  background-color: transparent;
+}
+.menu .menup .blackbox .price {
+  width: 28%;
+  text-align: center;
+  font-size: 10px;
+  padding-left: 10px;
+}
+.menu .menup .redbox {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.menu .menup .redbox .deleteitem {
+  height: 20px;
+  background-color: rgb(196, 5, 5);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.menu .product {
+  color: black;
+  text-align: center;
+  padding: 0px;
+  background-color: white;
+}
+
+.productf {
+  color: black;
+  text-align: center;
+  padding: 0px;
+  opacity: 1;
+}
+
+.produit::after {
+  content: "";
+  clear: none;
+  display: table;
+}
+
+.buttonmore {
+  padding-left: 50%;
+  width: auto;
+  border: none;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.buttonmore button {
+  width: auto;
+  margin-left: 46%;
+  margin-top: 3%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.about {
+  width: auto;
+  height: 400px;
+  background-color: #f7c8c8;
+}
+.about .sectiontext {
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-left: 5%;
+}
+.about .sectiontext h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.about .sectiontext .buttonreadmore {
+  border: none;
+  width: auto;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+.about .sectiontext .buttonreadmore button {
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.about .sectionimg {
+  float: right;
+  width: 30%;
+  top: 0px;
+  left: 0px;
+  margin-right: 2%;
+  margin-left: 0%;
+  margin-top: 5%;
+  height: auto;
+  margin-bottom: 5%;
+}
+.about .sectionimg img {
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.customers {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 8%;
+  margin-bottom: 5px;
+}
+
+.testimony {
+  border: 2px solid #ccc;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 16px;
+  margin-top: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testimony::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.testimony img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+.testimony span {
+  font-size: 20px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.prevnext {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  /*&:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }*/
+}
+.prevnext a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.prevnext .prev {
+  background-color: #b9bebe;
+  color: black;
+}
+.prevnext .next {
+  background-color: #b9bebe;
+  color: black;
+}
+.prevnext .round {
+  border-radius: 50%;
+}
+
+.gettouch {
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.gettouch .sectiontext {
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-left: 5%;
+}
+.gettouch .sectiontext h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0px;
+}
+.gettouch .sectiontext p {
+  text-align: justify;
+}
+.gettouch .sectiontext #totalpaye {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.gettouch .sectionimg {
+  float: right;
+  width: 30%;
+  left: 0px;
+  margin-right: 2%;
+  margin-left: 0%;
+  height: auto;
+  margin-top: 8%;
+}
+.gettouch .sectionimg .buttonreadmore {
+  border: none;
+  width: auto;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+.gettouch .sectionimg .buttonreadmore button {
+  margin: 5px;
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.gettouch .sectionimg .buttonreadmore .newslett {
+  background-color: #f7c8c8;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 200px;
+  width: 100%;
+}
+
+.footer {
+  width: auto;
+  height: 380px;
+  margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.footer .mask {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
+  width: auto;
+}
+.footer .container {
+  z-index: 2;
+  position: absolute;
+  width: auto;
+  margin: 10px;
+}
+.footer .container .leftbox {
+  float: left;
+  margin-left: 5%;
+  width: 25%;
+  height: 280px;
+  color: rgb(255, 255, 255);
+}
+.footer .container .leftbox h4 {
+  text-align: left;
+}
+.footer .container .leftbox ul {
+  padding-left: 2px;
+  list-style: none;
+}
+.footer .container .leftbox ul i {
+  text-align: left;
+  margin-right: 2px;
+}
+.footer .container .leftbox ul li {
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.footer .container .middlebox {
+  float: left;
+  width: 30%;
+  height: 350px;
+  color: rgb(255, 255, 255);
+}
+.footer .container .middlebox h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+.footer .container .middlebox p {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.footer .container .middlebox .iconet {
+  text-align: center;
+}
+.footer .container .middlebox .iconet ul {
+  list-style: none;
+  padding: 0px;
+}
+.footer .container .middlebox .iconet ul i {
+  margin: 2px;
+}
+.footer .container .middlebox .iconet ul li {
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+}
+.footer .container .middlebox .afterfoot {
+  color: rgb(255, 255, 255);
+  margin-top: 5%;
+  border-top: 1px solid rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+}
+.footer .container .middlebox .afterfoot p {
+  padding-top: 5%;
+  text-align: center;
+}
+.footer .container .rightbox {
+  margin-right: 5%;
+  float: right;
+  color: rgb(255, 255, 255);
+  width: 25%;
+  height: 280px;
+}
+.footer .container .rightbox h4 {
+  text-align: left;
+  padding-left: 12%;
+}
+.footer .container .rightbox ul {
+  list-style: none;
+}
+.footer .container .rightbox ul i {
+  margin: 2px;
+}
+.footer .container .rightbox ul li {
+  margin: 5px;
+  font-size: 20px;
+  text-align: left;
+}
+.footer .container .rightbox ul li a {
+  text-align: left;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .about {
+    width: auto;
+    width: auto;
+    height: 650px;
+    background-color: #f7c8c8;
+  }
+  .about .sectiontext {
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .about .sectiontext .buttonreadmore {
+    border: none;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .about .sectiontext .buttonreadmore button {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  .about .sectionimg {
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+    height: auto;
+    margin-bottom: 1%;
+    width: auto;
+    top: 0;
+    left: 0;
+  }
+  .about .sectionimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .testimony {
+    text-align: center;
+  }
+  .testimony img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+  .gettouch {
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }
+  .gettouch .sectiontext {
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 5%;
+  }
+  .gettouch .sectiontext h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0px;
+  }
+  .gettouch .sectiontext p {
+    text-align: justify;
+  }
+  .gettouch .sectionimg {
+    width: auto;
+    height: auto;
+    left: 0px;
+    margin-right: 10%;
+    margin-top: 0%;
+  }
+  .gettouch .sectionimg .buttonreadmore {
+    border: none;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .gettouch .sectionimg .buttonreadmore button {
+    display: inline-block;
+    margin: 2px;
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  .gettouch .sectionimg .buttonreadmore .contform {
+    float: left;
+  }
+  .gettouch .sectionimg .buttonreadmore .newslett {
+    float: right;
+    background-color: #f7c8c8;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-left: 10px;
+  }
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1337px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 24%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1113px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 23.9%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1013px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 23.85%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 969px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 23.69%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 851px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 23.5%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 744px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 23.25%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 638px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 23.15%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 604px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: auto;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 30%;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer {
+    width: auto;
+    height: 380px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  .footer .mask {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+    width: auto;
+  }
+  .footer .container {
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    margin: 10px;
+  }
+  .footer .container .leftbox {
+    /* //float:left;
+     border: 1px solid yellow;
+     margin-left: 10%;
+     margin-right: 10%;
+    // background:Red;
+     width:auto;
+     height:200px;
+     color: rgba(255, 255, 255, 1);
+     h4{
+       text-align: center;
+     }
+     ul{
+       padding-left: 2px;
+       list-style: none;
+       i{
+         text-align: left;
+         margin-right: 2px;
+       }
+       li{
+         text-align: left;
+         margin-top: 8px;
+         margin-bottom: 8px;
+         font-size: 20px;
+       }
+     }*/
+    visibility: hidden;
+    display: none;
+  }
+  .footer .container .middlebox {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: 380px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+  }
+  .footer .container .middlebox h2 {
+    text-align: center;
+  }
+  .footer .container .middlebox p {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .footer .container .middlebox .iconet {
+    text-align: center;
+  }
+  .footer .container .middlebox .iconet ul {
+    list-style: none;
+    padding: 0%;
+  }
+  .footer .container .middlebox .iconet ul i {
+    margin: 2px;
+  }
+  .footer .container .middlebox .iconet ul li {
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+  }
+  .footer .container .middlebox .afterfoot {
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    border-top: 1px solid rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+  }
+  .footer .container .middlebox .afterfoot p {
+    padding-top: 5%;
+    text-align: center;
+  }
+  .footer .container .rightbox {
+    /*margin-right: 10%;
+    border: 1px solid blue;
+    float:right;
+    color: rgba(255, 255, 255, 1);
+    width:25%;
+    height:280px;
+    h4{
+      text-align: center;
+
+    }
+    ul{
+      list-style: none;
+      i{
+        margin: 2px;
+      }
+      li{
+        margin: 5px;
+        font-size: 20px;
+        a{
+          text-decoration: none;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }*/
+    visibility: hidden;
+    display: none;
+  }
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 0px;
+}
+
+.product {
+  color: black;
+  text-align: center;
+  padding: 0px;
+  background-color: white;
+}
+
+.productf {
+  color: black;
+  text-align: center;
+  padding: 0px;
+  opacity: 1;
+}
+
+.produit::after {
+  content: "";
+  clear: none;
+  display: table;
+}
+
+[class*=col-] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+.row,
+.row > .column {
+  padding: 0px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=file.css.map */

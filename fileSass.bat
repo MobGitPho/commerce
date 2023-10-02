@@ -1,0 +1,1 @@
+dartSass\sass scss/file.scss:css/file.css --watch
