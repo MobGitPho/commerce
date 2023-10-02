@@ -49,6 +49,9 @@ body {
 .header .topnav-right {
   float: right;
 }
+.header .topnav-right .shop {
+  cursor: pointer;
+}
 .header .topnav-right .shop .count {
   width: auto;
   top: -5px;
