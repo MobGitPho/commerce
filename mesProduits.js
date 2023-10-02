@@ -30,4 +30,28 @@ let products = [
         qte:0
 
     },
+    {
+        id: 5,
+        name: 'Maki Maki',
+        img: 'mmp.jpg',
+        price: 200,
+        qte:0
+
+    },
+    {
+        id: 6,
+        name: 'Tige Louban',
+        img: 'mep.jpg',
+        price: 100,
+        qte:0
+
+    },
+    {
+        id: 7,
+        name: 'Encanto',
+        img: 'mip.jpg',
+        price: 3,
+        qte:0
+
+    },
 ];

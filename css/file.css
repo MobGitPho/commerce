@@ -49,9 +49,6 @@ body {
 .header .topnav-right {
   float: right;
 }
-.header .topnav-right .shop {
-  cursor: pointer;
-}
 .header .topnav-right .shop .count {
   width: auto;
   top: -5px;
@@ -554,7 +551,7 @@ body {
 .customers {
   text-align: center;
   font-size: 1.2em;
-  margin-top: 8%;
+  margin-top: 3%;
   margin-bottom: 5px;
 }
 
@@ -1754,7 +1751,7 @@ body {
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
+  width: 100px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -1764,7 +1761,7 @@ body {
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -90px;
 }
 
 /* Popup arrow */
