@@ -71,7 +71,7 @@ function initArtPan() {
                     <div class="col-12 deleteitem" onclick="deleteItemduPan(${result.id})">X <span id="total-${result.id}"></span> </div>
                 </div>
             </div>
-        
+         
         `;
         //console.log(monPan);
         Mesqtes.push(qtesave);
