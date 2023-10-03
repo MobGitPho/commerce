@@ -15,7 +15,7 @@ $colblack:black;
     display: block;
     margin: auto;
     overflow-x: hidden;
-    //z-index: 4;
+    font-family:'Times New Roman', Times, serif;
   }
 
   .header {
@@ -407,9 +407,8 @@ $colblack:black;
         cursor: pointer;
         margin: 0px;
         height: auto;
-       // border: 1px solid black;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        //border: 1px solid yellow;
+        padding: 5px;
         background-color: rgba(0, 0, 0, 1);
         color: rgba(255, 255, 255, 1);
         font-size: 15px;
@@ -425,6 +424,31 @@ $colblack:black;
           color: rgba(0, 0, 0, 1);
           font-size: 15px;
           text-align: center;
+          padding: 5px;
+        }
+        .add{
+          width: 30%;
+          padding: 5px;
+          margin-right: 2px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          font-size: 15px;
+          text-align: center;
+          //border: 1px solid red;
+          .button{
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .price{
+          width:40%;
+         // border: 1px solid yellow;
+          text-align: center;
+          font-size: 15px; 
+          padding: 5px;
+          float: right;
         }
         .detailp{
           width: 30%;
@@ -462,28 +486,6 @@ $colblack:black;
           color: rgba(0, 0, 0, 1);
           font-size: 15px;
           text-align: center;
-        }
-        .add{
-          width: 30%;
-          padding: 2px;
-          margin-right: 2px;
-          border: none;
-          border-radius: 25px;
-          background-color: rgba(255, 255, 255, 1);
-          color: rgba(0, 0, 0, 1);
-          font-size: 10px;
-          text-align: center;
-         
-          .button{
-            border: none;
-            background-color: transparent;
-          }
-        }
-        .price{
-          width:28%;
-          text-align: center;
-          font-size: 10px;
-          padding-left: 10px;
         }
         
       }
@@ -610,6 +612,31 @@ $colblack:black;
   margin-top: 3%;
   margin-bottom: 5px;
   //border: 1px solid red;
+
+}
+.payement{
+  font-family: 'Trebuchet MS';
+  text-align: center;
+  font-size: 1.0em;
+  margin-top: 3%;
+  margin-bottom: 5px;
+  //border: 1px solid red;
+  p{
+    font-size: x-large;
+    font-weight: 500;
+    color: rgba(63, 3, 3, 1);
+  }
+  button{
+    border: 1px solid #fddff2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fddff2;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+  }
 
 }
 .testimony {
@@ -1061,7 +1088,6 @@ $colblack:black;
     padding: 16px;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
@@ -1125,9 +1151,8 @@ $colblack:black;
           text-align: center;
         }
         .add{
-          width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
+          width: 37%;
+          padding: 5px;
           margin-right: 2px;
           border: none;
           border-radius: 25px;
@@ -1141,8 +1166,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:35%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 15px; 
+           padding: 5px;
+           float: right;
         }
       }
 
@@ -1151,7 +1180,181 @@ $colblack:black;
   }
 }
 
-@media screen  and (max-width: 1113px) {
+@media screen  and (max-width: 1133px) {
+  .menu{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+   // border: 2px solid blue;
+    .menup{
+     width: 24%;
+     margin: 5px;
+      border: 1px solid gray;
+      padding: 0px;
+      
+      .menupimg{
+        img{
+          object-fit: fill;
+          margin: 0 auto;
+        }
+      }
+    
+      .menupa{
+          padding: 0 auto;
+          margin-left: 0px;
+          margin-right: 0px;
+          opacity: 1;
+          h4{
+            margin-top: 1px;
+            margin-bottom: 1px;
+          }
+          p{
+          
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+      }
+      .blackbox{
+        cursor: pointer;
+        margin: 0px;
+        height: auto;
+        //border: 1px solid black;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 15px;
+      // display: grid;
+        grid-column-gap: 2px;
+        .detail{
+          width: 25%;
+          height: auto;
+          margin-right: 5px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgb(238, 192, 131);
+          color: rgba(0, 0, 0, 1);
+        
+          text-align: center;
+        }
+        .add{
+          width: 35%;
+          padding: 5px;
+          margin-right: 2px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          
+          text-align: center;
+          .button{
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .price{
+          width:36%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 15px; 
+           padding: 5px;
+           float: right;
+        }
+      }
+
+  }
+
+  }
+}
+
+@media screen  and (max-width: 1123px) {
+  .menu{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+   // border: 2px solid blue;
+    .menup{
+     width: 24%;
+     margin: 5px;
+      border: 1px solid gray;
+      padding: 0px;
+      
+      .menupimg{
+        img{
+          object-fit: fill;
+          margin: 0 auto;
+        }
+      }
+    
+      .menupa{
+          padding: 0 auto;
+          margin-left: 0px;
+          margin-right: 0px;
+          opacity: 1;
+          h4{
+            margin-top: 1px;
+            margin-bottom: 1px;
+          }
+          p{
+          
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+      }
+      .blackbox{
+        cursor: pointer;
+        margin: 0px;
+        height: auto;
+        //border: 1px solid black;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 15px;
+      // display: grid;
+        grid-column-gap: 2px;
+        .detail{
+          width: 25%;
+          height: auto;
+          margin-right: 5px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgb(238, 192, 131);
+          color: rgba(0, 0, 0, 1);
+        
+          text-align: center;
+        }
+        .add{
+          width: 35.5%;
+          padding: 5px;
+          margin-right: 2px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          
+          text-align: center;
+          .button{
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .price{
+          width:34.5%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 15px; 
+           padding: 5px;
+           float: right;
+        }
+      }
+
+  }
+
+  }
+}
+
+@media screen  and (max-width: 1109px) {
   .menu{
     width: auto;
     margin-left: 5%;
@@ -1209,15 +1412,14 @@ $colblack:black;
           text-align: center;
         }
         .add{
-          width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
-          margin-right: 2px;
+          width: 35.4%;
+          padding: 5px;
+          margin-right: 0.8px;
           border: none;
           border-radius: 25px;
           background-color: rgba(255, 255, 255, 1);
           color: rgba(0, 0, 0, 1);
-          
+          font-size: 14px; 
           text-align: center;
           .button{
             border: none;
@@ -1225,8 +1427,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:34.2%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 13.5px; 
+           padding: 5px;
+           float: right;
         }
       }
 
@@ -1234,7 +1440,7 @@ $colblack:black;
 
   }
 }
-@media screen  and (max-width: 1013px) {
+@media screen  and (max-width: 1009px) {
   .menu{
     width: auto;
     margin-left: 5%;
@@ -1292,9 +1498,8 @@ $colblack:black;
           text-align: center;
         }
         .add{
-          width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
+          width: 35.5%;
+          padding: 5px;
           margin-right: 2px;
           border: none;
           border-radius: 25px;
@@ -1308,8 +1513,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:34.5%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 15px; 
+           padding: 5px;
+           float: right;
         }
       }
 
@@ -1375,9 +1584,8 @@ $colblack:black;
           text-align: center;
         }
         .add{
-          width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
+          width: 36%;
+          padding: 5px;
           margin-right: 2px;
           border: none;
           border-radius: 25px;
@@ -1391,8 +1599,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:34.5%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 15px; 
+           padding: 5px;
+           float: right;
         }
       }
 
@@ -1458,15 +1670,14 @@ $colblack:black;
           text-align: center;
         }
         .add{
-          width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
+          width: 36%;
+          padding: 5px;
           margin-right: 2px;
           border: none;
           border-radius: 25px;
           background-color: rgba(255, 255, 255, 1);
           color: rgba(0, 0, 0, 1);
-          
+          font-size: 13.5px;
           text-align: center;
           .button{
             border: none;
@@ -1474,8 +1685,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:33.5%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 13.5px; 
+           padding: 5px;
+           float: right;
         }
       }
 
@@ -1541,15 +1756,14 @@ $colblack:black;
           text-align: center;
         }
         .add{
-          width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
+          width: 36%;
+          padding: 5px;
           margin-right: 2px;
           border: none;
           border-radius: 25px;
           background-color: rgba(255, 255, 255, 1);
           color: rgba(0, 0, 0, 1);
-          
+          font-size: 14px;
           text-align: center;
           .button{
             border: none;
@@ -1557,8 +1771,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:32.5%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 13px; 
+           padding: 5px;
+           float: right;
         }
       }
 
@@ -1566,7 +1784,7 @@ $colblack:black;
 
   }
 }
-@media screen  and (max-width: 638px) {
+@media screen  and (max-width: 645px) {
   .menu{
     width: auto;
     margin-left: 5%;
@@ -1606,7 +1824,7 @@ $colblack:black;
         margin: 0px;
         height: auto;
         border: 1px solid black;
-        padding: 5px;
+        padding: 3px;
         background-color: rgba(0, 0, 0, 1);
         color: rgba(255, 255, 255, 1);
         font-size: 15px;
@@ -1615,24 +1833,23 @@ $colblack:black;
         .detail{
           width: 25%;
           height: auto;
-          margin-right: 5px;
+          margin-right: 1px;
           border: none;
           border-radius: 25px;
           background-color: rgb(238, 192, 131);
           color: rgba(0, 0, 0, 1);
-        
+          font-size: 13px;
           text-align: center;
         }
         .add{
           width: 30%;
-          padding-left: 2px;
-          padding-right: 2px;
-          margin-right: 2px;
+          padding: 2px;
+          margin-right: 0.2px;
           border: none;
-          border-radius: 25px;
+          border-radius: 20px;
           background-color: rgba(255, 255, 255, 1);
           color: rgba(0, 0, 0, 1);
-          
+          font-size: 12px;
           text-align: center;
           .button{
             border: none;
@@ -1640,8 +1857,12 @@ $colblack:black;
           }
         }
         .price{
-          width:25%;
-        text-align: center;
+          width:32.5%;
+          // border: 1px solid yellow;
+           text-align: center;
+           font-size: 12px; 
+           padding: 5px;
+           float: left;
         }
       }
 
@@ -1695,7 +1916,7 @@ $colblack:black;
         font-size: 15px;
       // display: grid;
         grid-column-gap: 2px;
-        .detail{
+       /* .detail{
           width: 25%;
           height: auto;
           margin-right: 5px;
@@ -1725,14 +1946,174 @@ $colblack:black;
         .price{
           width:25%;
         text-align: center;
+        }*/
+        
+        .detail{
+          width: 25%;
+          height: auto;
+          margin-right: 5px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgb(238, 192, 131);
+          color: rgba(0, 0, 0, 1);
+          font-size: 15px;
+          text-align: center;
+          padding: 5px;
         }
+        .add{
+          width: 30%;
+          padding: 5px;
+          margin-right: 2px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          font-size: 15px;
+          text-align: center;
+          //border: 1px solid red;
+          .button{
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .price{
+          width:40%;
+         // border: 1px solid yellow;
+          text-align: center;
+          font-size: 15px; 
+          padding: 5px;
+          float: right;
+        }
+     
+     
       }
 
   }
 
   }
 }
+@media screen  and (max-width: 332px) {
+  .menu{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+   // border: 2px solid blue;
+    .menup{
+     width: auto;
+     margin: 5px;
+      border: 1px solid gray;
+      padding: 0px;
+      
+      .menupimg{
+        img{
+          object-fit: cover;
+          margin: 0 auto;
+        }
+      }
+    
+      .menupa{
+          padding: 0 auto;
+          margin-left: 0px;
+          margin-right: 0px;
+          opacity: 1;
+          h4{
+            margin-top: 1px;
+            margin-bottom: 1px;
+          }
+          p{
+          
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+      }
+      .blackbox{
+        cursor: pointer;
+        margin: 0px;
+        height: auto;
+        border: 1px solid black;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+        font-size: 15px;
+      // display: grid;
+        grid-column-gap: 2px;
+       /* .detail{
+          width: 25%;
+          height: auto;
+          margin-right: 5px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgb(238, 192, 131);
+          color: rgba(0, 0, 0, 1);
+        
+          text-align: center;
+        }
+        .add{
+          width: 30%;
+          padding-left: 2px;
+          padding-right: 2px;
+          margin-right: 2px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          
+          text-align: center;
+          .button{
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .price{
+          width:25%;
+        text-align: center;
+        }*/
+        
+        .detail{
+          width: 25%;
+          height: auto;
+          margin-right: 5px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgb(238, 192, 131);
+          color: rgba(0, 0, 0, 1);
+          font-size: 15px;
+          text-align: center;
+          padding: 5px;
+        }
+        .add{
+          width: 35%;
+          padding: 5px;
+          margin-right: 2px;
+          border: none;
+          border-radius: 25px;
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(0, 0, 0, 1);
+          font-size: 15px;
+          text-align: center;
+          //border: 1px solid red;
+          .button{
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .price{
+          width:35%;
+         // border: 1px solid yellow;
+          text-align: center;
+          font-size: 15px; 
+          padding: 5px;
+          float: right;
+        }
+     
+     
+      }
 
+  }
+
+  }
+}
 @media screen and (max-width : 1023px) {
   .footer{
     width: auto;

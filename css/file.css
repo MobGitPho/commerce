@@ -6,6 +6,7 @@ body {
   display: block;
   margin: auto;
   overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .header {
@@ -374,8 +375,7 @@ body {
   cursor: pointer;
   margin: 0px;
   height: auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   font-size: 15px;
@@ -391,6 +391,29 @@ body {
   color: rgb(0, 0, 0);
   font-size: 15px;
   text-align: center;
+  padding: 5px;
+}
+.menu .menup .blackbox .add {
+  width: 30%;
+  padding: 5px;
+  margin-right: 2px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+}
+.menu .menup .blackbox .add .button {
+  border: none;
+  background-color: transparent;
+}
+.menu .menup .blackbox .price {
+  width: 40%;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  float: right;
 }
 .menu .menup .blackbox .detailp {
   width: 30%;
@@ -425,27 +448,6 @@ body {
   color: rgb(0, 0, 0);
   font-size: 15px;
   text-align: center;
-}
-.menu .menup .blackbox .add {
-  width: 30%;
-  padding: 2px;
-  margin-right: 2px;
-  border: none;
-  border-radius: 25px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 10px;
-  text-align: center;
-}
-.menu .menup .blackbox .add .button {
-  border: none;
-  background-color: transparent;
-}
-.menu .menup .blackbox .price {
-  width: 28%;
-  text-align: center;
-  font-size: 10px;
-  padding-left: 10px;
 }
 .menu .menup .redbox {
   margin-bottom: 0px;
@@ -556,6 +558,30 @@ body {
   font-size: 1.2em;
   margin-top: 3%;
   margin-bottom: 5px;
+}
+
+.payement {
+  font-family: "Trebuchet MS";
+  text-align: center;
+  font-size: 1em;
+  margin-top: 3%;
+  margin-bottom: 5px;
+}
+.payement p {
+  font-size: x-large;
+  font-weight: 500;
+  color: rgb(63, 3, 3);
+}
+.payement button {
+  border: 1px solid #fddff2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  background-color: #fddff2;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .testimony {
@@ -946,7 +972,6 @@ body {
   padding: 16px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
@@ -1007,9 +1032,8 @@ body {
     text-align: center;
   }
   .menu .menup .blackbox .add {
-    width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
+    width: 37%;
+    padding: 5px;
     margin-right: 2px;
     border: none;
     border-radius: 25px;
@@ -1022,11 +1046,160 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 35%;
     text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
   }
 }
-@media screen and (max-width: 1113px) {
+@media screen and (max-width: 1133px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 24%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 35%;
+    padding: 5px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 36%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
+  }
+}
+@media screen and (max-width: 1123px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: 24%;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: fill;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add {
+    width: 35.5%;
+    padding: 5px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 34.5%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
+  }
+}
+@media screen and (max-width: 1109px) {
   .menu {
     width: auto;
     margin-left: 5%;
@@ -1079,14 +1252,14 @@ body {
     text-align: center;
   }
   .menu .menup .blackbox .add {
-    width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-right: 2px;
+    width: 35.4%;
+    padding: 5px;
+    margin-right: 0.8px;
     border: none;
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-size: 14px;
     text-align: center;
   }
   .menu .menup .blackbox .add .button {
@@ -1094,11 +1267,14 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 34.2%;
     text-align: center;
+    font-size: 13.5px;
+    padding: 5px;
+    float: right;
   }
 }
-@media screen and (max-width: 1013px) {
+@media screen and (max-width: 1009px) {
   .menu {
     width: auto;
     margin-left: 5%;
@@ -1151,9 +1327,8 @@ body {
     text-align: center;
   }
   .menu .menup .blackbox .add {
-    width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
+    width: 35.5%;
+    padding: 5px;
     margin-right: 2px;
     border: none;
     border-radius: 25px;
@@ -1166,8 +1341,11 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 34.5%;
     text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
   }
 }
 @media screen and (max-width: 969px) {
@@ -1223,9 +1401,8 @@ body {
     text-align: center;
   }
   .menu .menup .blackbox .add {
-    width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
+    width: 36%;
+    padding: 5px;
     margin-right: 2px;
     border: none;
     border-radius: 25px;
@@ -1238,8 +1415,11 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 34.5%;
     text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
   }
 }
 @media screen and (max-width: 851px) {
@@ -1295,14 +1475,14 @@ body {
     text-align: center;
   }
   .menu .menup .blackbox .add {
-    width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
+    width: 36%;
+    padding: 5px;
     margin-right: 2px;
     border: none;
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-size: 13.5px;
     text-align: center;
   }
   .menu .menup .blackbox .add .button {
@@ -1310,8 +1490,11 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 33.5%;
     text-align: center;
+    font-size: 13.5px;
+    padding: 5px;
+    float: right;
   }
 }
 @media screen and (max-width: 744px) {
@@ -1367,14 +1550,14 @@ body {
     text-align: center;
   }
   .menu .menup .blackbox .add {
-    width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
+    width: 36%;
+    padding: 5px;
     margin-right: 2px;
     border: none;
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-size: 14px;
     text-align: center;
   }
   .menu .menup .blackbox .add .button {
@@ -1382,11 +1565,14 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 32.5%;
     text-align: center;
+    font-size: 13px;
+    padding: 5px;
+    float: right;
   }
 }
-@media screen and (max-width: 638px) {
+@media screen and (max-width: 645px) {
   .menu {
     width: auto;
     margin-left: 5%;
@@ -1422,7 +1608,7 @@ body {
     margin: 0px;
     height: auto;
     border: 1px solid black;
-    padding: 5px;
+    padding: 3px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-size: 15px;
@@ -1431,22 +1617,23 @@ body {
   .menu .menup .blackbox .detail {
     width: 25%;
     height: auto;
-    margin-right: 5px;
+    margin-right: 1px;
     border: none;
     border-radius: 25px;
     background-color: rgb(238, 192, 131);
     color: rgb(0, 0, 0);
+    font-size: 13px;
     text-align: center;
   }
   .menu .menup .blackbox .add {
     width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-right: 2px;
+    padding: 2px;
+    margin-right: 0.2px;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-size: 12px;
     text-align: center;
   }
   .menu .menup .blackbox .add .button {
@@ -1454,8 +1641,11 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 32.5%;
     text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    float: left;
   }
 }
 @media screen and (max-width: 604px) {
@@ -1499,6 +1689,37 @@ body {
     color: rgb(255, 255, 255);
     font-size: 15px;
     grid-column-gap: 2px;
+    /* .detail{
+       width: 25%;
+       height: auto;
+       margin-right: 5px;
+       border: none;
+       border-radius: 25px;
+       background-color: rgb(238, 192, 131);
+       color: rgba(0, 0, 0, 1);
+
+       text-align: center;
+     }
+     .add{
+       width: 30%;
+       padding-left: 2px;
+       padding-right: 2px;
+       margin-right: 2px;
+       border: none;
+       border-radius: 25px;
+       background-color: rgba(255, 255, 255, 1);
+       color: rgba(0, 0, 0, 1);
+
+       text-align: center;
+       .button{
+         border: none;
+         background-color: transparent;
+       }
+     }
+     .price{
+       width:25%;
+     text-align: center;
+     }*/
   }
   .menu .menup .blackbox .detail {
     width: 25%;
@@ -1508,17 +1729,19 @@ body {
     border-radius: 25px;
     background-color: rgb(238, 192, 131);
     color: rgb(0, 0, 0);
+    font-size: 15px;
     text-align: center;
+    padding: 5px;
   }
   .menu .menup .blackbox .add {
     width: 30%;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding: 5px;
     margin-right: 2px;
     border: none;
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    font-size: 15px;
     text-align: center;
   }
   .menu .menup .blackbox .add .button {
@@ -1526,8 +1749,119 @@ body {
     background-color: transparent;
   }
   .menu .menup .blackbox .price {
-    width: 25%;
+    width: 40%;
     text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
+  }
+}
+@media screen and (max-width: 332px) {
+  .menu {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+  }
+  .menu .menup {
+    width: auto;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 0px;
+  }
+  .menu .menup .menupimg img {
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .menu .menup .menupa {
+    padding: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+  .menu .menup .menupa h4 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .menu .menup .menupa p {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .menu .menup .blackbox {
+    cursor: pointer;
+    margin: 0px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    grid-column-gap: 2px;
+    /* .detail{
+       width: 25%;
+       height: auto;
+       margin-right: 5px;
+       border: none;
+       border-radius: 25px;
+       background-color: rgb(238, 192, 131);
+       color: rgba(0, 0, 0, 1);
+
+       text-align: center;
+     }
+     .add{
+       width: 30%;
+       padding-left: 2px;
+       padding-right: 2px;
+       margin-right: 2px;
+       border: none;
+       border-radius: 25px;
+       background-color: rgba(255, 255, 255, 1);
+       color: rgba(0, 0, 0, 1);
+
+       text-align: center;
+       .button{
+         border: none;
+         background-color: transparent;
+       }
+     }
+     .price{
+       width:25%;
+     text-align: center;
+     }*/
+  }
+  .menu .menup .blackbox .detail {
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(238, 192, 131);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+  }
+  .menu .menup .blackbox .add {
+    width: 35%;
+    padding: 5px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+  }
+  .menu .menup .blackbox .add .button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu .menup .blackbox .price {
+    width: 35%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: right;
   }
 }
 @media screen and (max-width: 1023px) {

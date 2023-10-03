@@ -34,7 +34,7 @@ function initApp() {
                     <div class="row col-12 blackbox">
                     <div class="col-4 detail">Voir</div>
                     <div class="col-4 add" onclick="Addpan(${value.id})"><span>BUY NOW</span></div>
-                    <div class="col-4 price">Price $ ${value.price}</div>
+                    <div class="col-4 price"> Price $ ${value.price}</div>
                 </div>
             </div>
         
