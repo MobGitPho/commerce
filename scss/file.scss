@@ -389,7 +389,7 @@ $colblack:black;
       }
     
       .menupa{
-          padding: 0 auto;
+          padding: 5 px;
           margin-left: 0px;
           margin-right: 0px;
           opacity: 1;
@@ -515,6 +515,16 @@ $colblack:black;
     text-align: center;
     padding: 0px;
     opacity: 1;
+    #textvide{
+      color: #000;
+      font-size: 1.3em;
+      padding: 30px;
+      text-align: justify;
+      a{
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
   }
 
   .produit::after{

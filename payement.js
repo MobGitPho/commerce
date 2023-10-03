@@ -4,6 +4,7 @@ let Mesqtes =[];
 let MesIndex = [];
 let TotalQtePrice = "";
 
+
 function getArt(){
     let choiceArt = localStorage.getItem('article');
     if( choiceArt == null){
@@ -17,68 +18,82 @@ function getArt(){
 }
 
 let monPan = JSON.parse(localStorage.getItem('article'));
-document.getElementById("count").innerHTML= Number(monPan.length);
+console.log(monPan)
+if(monPan != null){
+    document.getElementById("count").innerHTML= Number(monPan.length);
+}else{
+    document.getElementById("count").innerHTML= 0;
+}
+
 //console.log(monPan);
 function initArtPan() {
-   
-    monPan.forEach((value, key) => {
-        let qtech ="";
-        let monQte = JSON.parse(localStorage.getItem('addIdQtePan'));
-        let result = products.find(({ id }) => id === value);
-        //console.log("monQte",monQte)
-        if(monQte != null){
-            let trv = monQte.find(({ id }) => id === value);
-            //console.log(trv);
-            if (trv != undefined){
-               qtech=trv["qteBuy"]; 
+    if(monPan != null){
+            monPan.forEach((value, key) => {
+            let qtech ="";
+            let monQte = JSON.parse(localStorage.getItem('addIdQtePan'));
+            let result = products.find(({ id }) => id === value);
+            //console.log("monQte",monQte)
+            if(monQte != null){
+                let trv = monQte.find(({ id }) => id === value);
+                //console.log(trv);
+                if (trv != undefined){
+                qtech=trv["qteBuy"]; 
+                }else{
+                    qtech = 1;
+                }
+                
             }else{
-                qtech = 0;
+                qtech = 1;  //result.qte + qteArtChoice;
             }
+        // console.log("qtech",qtech);
+            //MesIndex  = key;
+        let idtot = 1 * result.price
+        // console.log("idtot",idtot)
+            let qtesave = {
+                id:  result.id,
+                qteBuy: 1,
+                total:idtot
+            }
+
+        
+        
+
+            let newDiv = document.createElement('div');
+            newDiv.classList.add('menu');
+            newDiv.innerHTML = `
+
+                <div class="col-3 menup box1" id="box-${result.id}">
+                    <div class="row col-12 menupa product">
+                        <h4> ${result.name}  </h4>
+                        <p>${result.price}$</p>
+                    </div>
+                    <div class="row col-12 menupimg">
+                        <img class="" src="${result.img}" alt="" style="width: 100%;">
+                    </div>
+                    <div class="row col-12 blackbox">
+                        <div class="col-4 detailp" onclick="addqte(${result.id},${result.price})"><span>+</span> </div>
+                        <div class="col-4 addp"><span id="qteadd-${result.id}">${qtech}</span></div>
+                        <div class="col-4 detailm" onclick="moinsqte(${result.id},${result.price})"><span>-</span> </div>
+                    </div>
+                    <div class="row col-12 redbox">
+                        <div class="col-12 deleteitem" onclick="deleteItemduPan(${result.id})">X <span id="total-${result.id}"></span> </div>
+                    </div>
+                </div>
             
-        }else{
-            qtech = 0;  //result.qte + qteArtChoice;
-        }
-       // console.log("qtech",qtech);
-        //MesIndex  = key;
-       
-        let qtesave = {
-            id:  result.id,
-            qteBuy: 0,
-            total:0
-        }
+            `;
+            //console.log(monPan);
+            Mesqtes.push(qtesave);
+        menupanchoice.appendChild(newDiv);
+        
+        })
+        localStorage.setItem("addIdQtePan",JSON.stringify(Mesqtes));
+        Totalpayement()
+    
+   }else{
 
-       
-       
+   }
 
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('menu');
-        newDiv.innerHTML = `
-
-            <div class="col-3 menup box1" id="box-${result.id}">
-                <div class="row col-12 menupa product">
-                    <h4> ${result.name}  </h4>
-                    <p>${result.price}$</p>
-                </div>
-                <div class="row col-12 menupimg">
-                    <img class="" src="${result.img}" alt="" style="width: 100%;">
-                </div>
-                <div class="row col-12 blackbox">
-                    <div class="col-4 detailp" onclick="addqte(${result.id},${result.price})"><span>+</span> </div>
-                    <div class="col-4 addp"><span id="qteadd-${result.id}">${qtech}</span></div>
-                    <div class="col-4 detailm" onclick="moinsqte(${result.id},${result.price})"><span>-</span> </div>
-                </div>
-                <div class="row col-12 redbox">
-                    <div class="col-12 deleteitem" onclick="deleteItemduPan(${result.id})">X <span id="total-${result.id}"></span> </div>
-                </div>
-            </div>
-         
-        `;
-        //console.log(monPan);
-        Mesqtes.push(qtesave);
-       menupanchoice.appendChild(newDiv);
-       
-    })
-    localStorage.setItem("addIdQtePan",JSON.stringify(Mesqtes));
+    
 }
 
 
@@ -257,8 +272,8 @@ function deleteItemduPan(ItemId){
     addqte.splice(adq,1);
     Mesqtes.splice(indMq,1);
 
-    console.log("nbPan",Number(monPan.length))
-
+    //console.log("nbPan",Number(monPan.length))
+    
     if(Number(monPan.length) > 0){
         localStorage.setItem("article",JSON.stringify(article));
         localStorage.setItem("addIdQtePan",JSON.stringify(addqte))
@@ -271,10 +286,13 @@ function deleteItemduPan(ItemId){
         document.getElementById("count").innerHTML= Number(monPan.length);
         Totalpayement()
     }else{
-        
+       
         localStorage.removeItem("article");
         localStorage.removeItem("addIdQtePan");
         localStorage.clear();
+
+
+
         Totalpayement()
     }
 
@@ -292,17 +310,44 @@ function Totalpayement(){
     tot.forEach((value,key) => {
         Total = Total + value.total;
     });
+
     document.getElementById("totalpaye").innerHTML= Number(Total) + "$";
+    
+    buyNow(Total);
+
     return Total
 }
 
 
-/*var qte= 0;
-function buyNow(Art){
-    var panier = document.getElementById('count');
-    qte = qte + 1;
-    document.getElementById("count").innerHTML= qte;
-    return qte;
-}*/
+function buyNow(total){
+    var panier = document.getElementById('textvide');
+    if(total == 0){
+        panier.style.display="block";
+        panier.innerHTML= `Oops votre panier est vide ou la quantité est insuffisante ! retourner à la page boutique pour choisir les produits ou augmentez la quantité du produit <a href="index.html"> boutique</a>`;
+    }else{
+        panier.style.display="none"
+    }
+   
+    return total;
+}
 
+let Monto = document.getElementById('totalpaye');
+console.log(Monto)
+function buysolde(Monto){
+    var panier = document.getElementById('textvide');
+    console.log("MontoSup",Monto)
+    if(Monto > 0){
+        
+        panier.style.display="block";
+        panier.innerHTML= `Commande effectuée. Merci et à bientôt !!!`;
 
+        localStorage.removeItem("article");
+        localStorage.removeItem("addIdQtePan");
+        localStorage.clear();
+        var lk = "index.html";
+        window.location.href = "" + lk + "";
+    }else{
+        panier.innerHTML= `Oops mauvaise opération. Retourmer à la <a href="index.html"> boutique</a> !!!!`;
+    }
+
+}
