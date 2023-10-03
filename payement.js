@@ -296,12 +296,6 @@ function deleteItemduPan(ItemId){
         Totalpayement()
     }
 
-    //ITEM {} Reste dans le panier
-    //console.log("addqte",addqte);
-
-
-    
-
 }
 
 function Totalpayement(){
@@ -349,5 +343,6 @@ function buysolde(Monto){
     }else{
         panier.innerHTML= `Oops mauvaise opération. Retourmer à la <a href="index.html"> boutique</a> !!!!`;
     }
+
 
 }
