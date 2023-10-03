@@ -325,19 +325,20 @@ function buyNow(total){
     return total;
 }
 
-let Monto = document.getElementById('totalpaye');
+let Monto = document.getElementById('totalpaye').textContent;
 console.log(Monto)
 function buysolde(Monto){
     var panier = document.getElementById('textvide');
     console.log("MontoSup",Monto)
-    if(Monto > 0){
+    if(Monto != "0$"){
         
         panier.style.display="block";
-        panier.innerHTML= `Commande effectuée. Merci et à bientôt !!!`;
-
+        panier.innerHTML= `Commande effectuée. Merci et à bientôt retournez à la <a href="index.html"> boutique</a> !!!`;
+        
         localStorage.removeItem("article");
         localStorage.removeItem("addIdQtePan");
         localStorage.clear();
+       
         var lk = "index.html";
         window.location.href = "" + lk + "";
     }else{
