@@ -84,24 +84,25 @@ $colblack:black;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-
+    color:rgba(255, 255, 255, 1); ;
     a {
+      //background-color: red;
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
-      color: #818181;
+      color: rgba(255, 255, 255, 1);
       display: block;
       transition: 0.3s;
 
       &:hover {
-        color: #f1f1f1;
+        color: white;
       }
     }
     .closebtn {
