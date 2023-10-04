@@ -324,6 +324,7 @@ body {
   margin-bottom: 0px;
 }
 .buttonM button {
+  cursor: pointer;
   border: 1px solid black;
   height: auto;
   width: auto;
@@ -515,6 +516,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 .buttonmore button {
+  cursor: pointer;
   width: auto;
   margin-left: 46%;
   margin-top: 3%;
@@ -551,6 +553,7 @@ body {
   margin-bottom: 0px;
 }
 .about .sectiontext .buttonreadmore button {
+  cursor: pointer;
   border: 1px solid black;
   height: auto;
   width: auto;
@@ -710,6 +713,7 @@ body {
   margin-bottom: 0px;
 }
 .gettouch .sectionimg .buttonreadmore button {
+  cursor: pointer;
   margin: 5px;
   border: 1px solid black;
   height: auto;
