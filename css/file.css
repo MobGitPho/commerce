@@ -78,12 +78,12 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: rgb(255, 255, 255);
   display: block;
   transition: 0.3s;
 }
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #70120b;
 }
 .sidebar .closebtn {
   position: absolute;
@@ -91,6 +91,24 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fddff2;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
 }
 
 /* .navbar {
@@ -350,15 +368,15 @@ body {
 .menu .menup {
   width: 24%;
   margin: 6px;
-  border: 1px solid gray;
-  padding: 0px;
+  border: 2px solid gray;
+  padding-top: 10px;
 }
 .menu .menup .menupimg img {
   object-fit: fill;
   margin: 0 auto;
 }
 .menu .menup .menupa {
-  padding: 5 px;
+  padding: 10 px;
   margin-left: 0px;
   margin-right: 0px;
   opacity: 1;
@@ -964,24 +982,6 @@ body {
     margin-left: 10px;
   }
 }
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left 0.5s;
-  padding: 16px;
-}
-
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
@@ -1000,8 +1000,8 @@ body {
   .menu .menup {
     width: 24%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1073,8 +1073,8 @@ body {
   .menu .menup {
     width: 24%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1146,8 +1146,8 @@ body {
   .menu .menup {
     width: 24%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1219,8 +1219,8 @@ body {
   .menu .menup {
     width: 23.9%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1294,8 +1294,8 @@ body {
   .menu .menup {
     width: 23.85%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1368,8 +1368,8 @@ body {
   .menu .menup {
     width: 23.69%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1442,8 +1442,8 @@ body {
   .menu .menup {
     width: 23.5%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1517,8 +1517,8 @@ body {
   .menu .menup {
     width: 23.25%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1592,8 +1592,8 @@ body {
   .menu .menup {
     width: 23.15%;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: fill;
@@ -1668,8 +1668,8 @@ body {
   .menu .menup {
     width: auto;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: cover;
@@ -1776,8 +1776,8 @@ body {
   .menu .menup {
     width: auto;
     margin: 5px;
-    border: 1px solid gray;
-    padding: 0px;
+    border: 2px solid gray;
+    padding-top: 10px;
   }
   .menu .menup .menupimg img {
     object-fit: cover;

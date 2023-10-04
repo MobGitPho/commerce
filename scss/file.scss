@@ -84,14 +84,14 @@ $colblack:black;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 4;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    color:rgba(255, 255, 255, 1); ;
+    //color:rgba(255, 255, 255, 1); 
     a {
       //background-color: red;
       padding: 8px 8px 8px 32px;
@@ -102,7 +102,7 @@ $colblack:black;
       transition: 0.3s;
 
       &:hover {
-        color: white;
+        color: #70120b;
       }
     }
     .closebtn {
@@ -113,6 +113,25 @@ $colblack:black;
       margin-left: 50px;
     }
   }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fddff2;
+    color: rgba(0, 0, 0, 1);
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
  /* .navbar {
     margin-left: 10px;
     margin-right: 10px;
@@ -379,9 +398,9 @@ $colblack:black;
     .menup{
      width: 24%;
      margin: 6px;
-      border: 1px solid gray;
-      padding: 0px;
-      
+      border: 2px solid gray;
+      padding-top: 10px;
+       
       .menupimg{
         img{
           object-fit: fill;
@@ -390,7 +409,7 @@ $colblack:black;
       }
     
       .menupa{
-          padding: 5 px;
+          padding: 10 px;
           margin-left: 0px;
           margin-right: 0px;
           opacity: 1;
@@ -920,7 +939,6 @@ $colblack:black;
 }
 
 
-
 @media screen and (max-width: 600px) {
   
      .topnav a, .topnav-right {
@@ -1075,29 +1093,6 @@ $colblack:black;
 
 }
 
-
-
-
-
-
- 
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
   
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
@@ -1114,8 +1109,8 @@ $colblack:black;
     .menup{
      width: 24%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+      padding-top: 10px;
       
       .menupimg{
         img{
@@ -1201,8 +1196,8 @@ $colblack:black;
     .menup{
      width: 24%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+     padding-top: 10px;
       
       .menupimg{
         img{
@@ -1288,8 +1283,8 @@ $colblack:black;
     .menup{
      width: 24%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+     padding-top: 10px;
       
       .menupimg{
         img{
@@ -1375,8 +1370,8 @@ $colblack:black;
     .menup{
      width: 23.90%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+      padding-top: 10px;
       
       .menupimg{
         img{
@@ -1461,8 +1456,8 @@ $colblack:black;
     .menup{
      width: 23.85%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+     padding-top: 10px;
       
       .menupimg{
         img{
@@ -1547,8 +1542,8 @@ $colblack:black;
     .menup{
      width: 23.69%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+     padding-top: 10px;
       
       .menupimg{
         img{
@@ -1633,8 +1628,8 @@ $colblack:black;
     .menup{
      width: 23.50%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+     padding-top: 10px;
       
       .menupimg{
         img{
@@ -1719,8 +1714,8 @@ $colblack:black;
     .menup{
      width: 23.25%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+      padding-top: 10px;
       
       .menupimg{
         img{
@@ -1805,8 +1800,8 @@ $colblack:black;
     .menup{
      width: 23.15%;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+      padding-top: 10px;
       
       .menupimg{
         img{
@@ -1891,8 +1886,8 @@ $colblack:black;
     .menup{
      width: auto;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+      padding-top: 10px;
       
       .menupimg{
         img{
@@ -2013,8 +2008,8 @@ $colblack:black;
     .menup{
      width: auto;
      margin: 5px;
-      border: 1px solid gray;
-      padding: 0px;
+     border: 2px solid gray;
+      padding-top: 10px;
       
       .menupimg{
         img{
