@@ -91,9 +91,9 @@ $colblack:black;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    //color:rgba(255, 255, 255, 1); 
+     
     a {
-      //background-color: red;
+      
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
@@ -2327,7 +2327,6 @@ $colblack:black;
     padding: 10px;
   }
   
-  /* Popup container - can be anything you want */
 .popup {
   position: relative;
   display: inline-block;
@@ -2338,7 +2337,7 @@ $colblack:black;
   user-select: none;
 }
 
-/* The actual popup */
+
 .popup .popuptext {
   visibility: hidden;
   width: 100px;
@@ -2354,7 +2353,7 @@ $colblack:black;
   margin-left: -90px;
 }
 
-/* Popup arrow */
+
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -2366,14 +2365,14 @@ $colblack:black;
   border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class - hide and show the popup */
+
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
-/* Add animation (fade in the popup) */
+
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
   to {opacity: 1;}
