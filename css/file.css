@@ -39,6 +39,9 @@ body {
 .header .topnav a.active {
   background-color: #fddff2;
   color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 .header .topnav-centered a {
   float: none;
@@ -283,9 +286,9 @@ body {
 
 .paraph {
   color: rgb(0, 0, 0);
-  font-family: "Ingrid Darling", "Snell Roundhand, cursive";
+  font-family: "Great Vibes", cursive;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 70px;
   margin-top: 10px;
   margin-left: 10%;
   width: auto;
@@ -490,6 +493,9 @@ body {
   padding: 0px;
   opacity: 1;
 }
+.productf h1 {
+  font-family: "Gabarito", cursive;
+}
 .productf #textvide {
   color: #000;
   font-size: 1.3em;
@@ -540,6 +546,7 @@ body {
   margin-left: 5%;
 }
 .about .sectiontext h1 {
+  font-family: "Gabarito", cursive;
   font-size: 2em;
   font-weight: bold;
 }
@@ -588,6 +595,9 @@ body {
   font-size: 1.2em;
   margin-top: 3%;
   margin-bottom: 5px;
+}
+.customers h1 {
+  font-family: "Gabarito", cursive;
 }
 
 .payement {
@@ -683,6 +693,7 @@ body {
   font-size: 2em;
   font-weight: bold;
   padding: 0px;
+  font-family: "Gabarito", cursive;
 }
 .gettouch .sectiontext p {
   text-align: justify;
@@ -796,6 +807,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 .footer .container .middlebox p {
   padding-left: 15px;
