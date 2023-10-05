@@ -336,7 +336,7 @@ $colblack:black;
     padding-bottom: 10px;
     margin-left: 10%;
     margin-bottom: 5px;
-    margin-top: 0px;
+    margin-top: 10px;
     width:auto;
     height:auto;
     //border:1px solid yellow; 
@@ -594,7 +594,7 @@ $colblack:black;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 2%;
-    margin-left: 5%;
+    margin-left: 10%;
     h1{
       font-family: 'Gabarito', cursive;
       font-size: 2em;
@@ -700,6 +700,7 @@ $colblack:black;
     float: left;
     margin-right: 20px;
     border-radius: 100%;
+    height: 90px;
   }
   span {
     font-size: 20px;
@@ -711,6 +712,7 @@ $colblack:black;
   margin-top: 25px;
   margin-bottom: 10px;
   text-align: center;
+  cursor: pointer;
   a {
     text-decoration: none;
     display: inline-block;

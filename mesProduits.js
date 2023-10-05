@@ -54,4 +54,12 @@ let products = [
         qte:0
 
     },
+    {
+        id: 8,
+        name: 'Bullet Brush',
+        img: 'mbp.jpg',
+        price: 5,
+        qte:0
+
+    },
 ];
